@@ -1,9 +1,14 @@
 <template>
-    <NuxtLayout>
-        <section @mousemove="editCursor" @touchmove="editCursor" ref="section" class="relative top-32 pb-20 pt-4">
-            <ContentDoc v-slot="{ doc }" path="/mirror">
-                <div class="relative">
-                    <!-- <article class="absolute text-black reversed">
+  <NuxtLayout>
+    <section
+      @mousemove="bothEvents"
+      @touchmove="editCursor"
+      ref="section"
+      class="relative top-32 pb-20 pt-4"
+    >
+      <ContentDoc v-slot="{ doc }" path="/mirror">
+        <div class="relative">
+          <!-- <article class="absolute text-black reversed select-none leading-6">
                         <div class="mt-32 flex flex-wrap items-center hover-this">
                             <div class="mx-auto -mt-8 w-full px-4 md:w-10/12 reversed">
                                 <h3 class="mb-3 font-bold">
@@ -13,72 +18,94 @@
                             </div>
                         </div>
                     </article> -->
-                    <article class="absolute text-white">
-                        <div class="mt-32 flex flex-wrap items-center hover-this">
-                            <div class="mx-auto -mt-8 w-full px-4 md:w-10/12">
-                                <h3 class="mb-3 font-bold">
-                                    {{ doc.title }}
-                                </h3>
-                                
-                                <ContentRenderer :value="doc" />
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </ContentDoc>
-        </section>
-        <div ref="cursor" class="cursor"></div>
-    </NuxtLayout>
+          <article class="absolute text-white select-none leading-6">
+            <div class="mt-32 flex flex-wrap items-center hover-this">
+              <div
+                ref="spanToMove"
+                class="move mx-auto -mt-8 w-full px-4 md:w-10/12"
+              >
+                <h3 class="mb-3 font-bold">
+                  {{ doc.title }}
+                </h3>
+                <ContentRenderer :value="doc" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </ContentDoc>
+    </section>
+    <div ref="cursor" class="cursor"></div>
+  </NuxtLayout>
 </template>
 
 <script setup>
-import {ref} from 'vue'
+import { ref } from "vue";
 
 const section = ref(null);
 const cursor = ref(null);
+const spanToMove = ref(null);
 
-const editCursor = e => {
-    if (cursor.value) {
-        const { clientX: x, clientY: y } = e;
-        cursor.value.style.left = x + 'px';
-        cursor.value.style.top = y + 'px';
-        cursor.value.style.transform = 'translate(-50%, -50%)';
+function bothEvents(e) {
+  editCursor(e);
+  animateit(e);
+}
+
+const editCursor = (e) => {
+  if (cursor.value) {
+    const { clientX: x, clientY: y } = e;
+    cursor.value.style.left = x + "px";
+    cursor.value.style.top = y + "px";
+    cursor.value.style.transform = "translate(-50%, -50%)";
+  }
+};
+
+const animateit = function (e) {
+  if (spanToMove.value) {
+    for (const child of spanToMove.value.children) {
+      const { offsetX: x, offsetY: y } = e,
+        { offsetWidth: width, offsetHeight: height } = spanToMove.value,
+        move = 25,
+        xMove = (x / width) * (move * 2) - move,
+        yMove = (y / height) * (move * 2) - move;
+
+      child.style.transform = `translate(${-xMove}px, ${-yMove}px)`;
     }
+
+    if (e.type === "mouseleave") move.value.style.transform = "";
+  }
 };
 
 function reverseString(str) {
-    return str.split("").reverse().join("");
+  return str.split("").reverse().join("");
 }
 
 function reverseStringDoc(doc) {
-    let newDoc = JSON.parse(JSON.stringify(doc))
+  let newDoc = JSON.parse(JSON.stringify(doc));
 
+  reverseStringChild(newDoc.body);
 
-    reverseStringChild(newDoc.body);
-
-    return {...newDoc};
+  return { ...newDoc };
 }
 
 function reverseStringChild(element) {
-    // For every children in the body recursively reverse the string
-    for (const child of element.children) {
+  // For every children in the body recursively reverse the string
+  for (const child of element.children) {
+    // console.log(child);
 
-        // console.log(child);
-
-        if (child.type === 'element' && child.tag === 'p') {
-            reverseStringChild(child);
-        }
-
-        if (child.type === 'text') {
-            child.value = reverseString(child.value);
-        }
+    if (child.type === "element" && child.tag === "p") {
+      reverseStringChild(child);
     }
-}
 
+    if (child.type === "text") {
+      child.value = reverseString(child.value);
+    }
+  }
+}
 </script>
 
 <style>
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   /* cursor: none; */
@@ -94,15 +121,15 @@ html, body {
   padding: 10rem;
   background-color: #fff;
   border-radius: 50%;
-  mix-blend-mode: difference;
-  transition: transform 0.3s ease;;
+  mix-blend-mode: exclusion;
+  transition: transform 0.3s ease;
 }
 
 .hover-this:hover ~ .cursor {
-  transform:translate(-50%, -50%) scale(8);
+  transform: translate(-50%, -50%) scale(8);
 }
 
-@media(max-width: 900px) {  
+@media (max-width: 900px) {
   .hover-this {
     width: 100%;
     padding: 20px 0;
@@ -111,11 +138,15 @@ html, body {
 }
 
 .reversed * p {
-    color: black;
+  color: black;
 }
 
 p {
-    color: white;
-} 
+  color: white;
+}
 
+.move {
+  display: inline-block;
+  transition: transform 0.1s linear;
+}
 </style>

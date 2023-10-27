@@ -104,8 +104,8 @@ const links = computed(() => ([
         class: "text-gray-700 hover:text-gray-900",
     },
     {
-        name: "Sign In",
-        href: '/login',
+        name: "Borges",
+        href: '/borges',
         icon: ArrowRightOnRectangleIcon,
         class: "text-gray-700 hover:text-gray-900",
     },
