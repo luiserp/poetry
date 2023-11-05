@@ -1,23 +1,22 @@
 <template>
   <NuxtLayout>
-    <div class="container p-10 bg-gray-50 ">
+    <div class="container p-10">
       <ContentList path="/works">
         <template #default="{ list }">
           <div
-            class="mt-8"
+            class="flex space-y-4 flex-col"
           >
             <NuxtLink
-              v-for="(article, index) in list"
+              v-for="article in list"
               :key="article._path"
               :href="article._path"
-              class="group"
             >
-              <div class="flex gap-4 hover:scale-105 w-[60%] transition-all duration-300">
+              <div class="flex gap-8 hover:scale-105 w-[60%] transition-all duration-300">
                 <div
-                  class="aspect-h-1 aspect-w-1 max-h-96 max-w-96 overflow-hidden xl:aspect-h-8 xl:aspect-w-7"
+                  class="max-h-[20%] max-w-[20%] overflow-hidden xl:aspect-h-8 xl:aspect-w-7"
                 >
                   <img
-                    :src="article.image"
+                    :src="article.card"
                     :alt="article.title"
                     class="object-cover"
                   />
@@ -49,8 +48,4 @@
   </NuxtLayout>
 </template>
 
-<script setup>
-import Card from "~/components/Core/Card/Card.vue";
-import CardBody from "~/components/Core/Card/CardBody.vue";
-import CardHeader from "~/components/Core/Card/CardHeader.vue";
-</script>
+<script setup></script>

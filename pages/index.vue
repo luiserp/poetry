@@ -68,7 +68,7 @@
           <div
             class="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0"
           >
-            <NuxtLink href="/about">
+            <NuxtLink href="/works/parks">
               <Card class="shadow-lg shadow-gray-500/10">
                 <CardHeader class="relative h-96">
                   <img
