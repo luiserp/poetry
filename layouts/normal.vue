@@ -1,15 +1,16 @@
 <template>
     <slot name="navbar">
-        <div class="container z-50 mx-auto px-10 py-6 bg-gray-50">
+        <div class="container absolute left-2/4 z-50 mx-auto -translate-x-2/4 p-4">
             <Navbar></Navbar>
         </div>
     </slot>
-
+        
     <slot />
 
 </template>
 
 <script setup>
 import Navbar from '~/components/Core/Navbar/Navbar.vue';
+
 
 </script>

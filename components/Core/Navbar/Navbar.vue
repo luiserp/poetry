@@ -1,6 +1,6 @@
 <template>
     <nav
-        class="block w-full max-w-screen-2xl rounded-xl bg-transparent shadow-none p-3"
+        class="block w-full max-w-screen-2xl rounded-xl bg-transparent shadow-none"
     >
         <div
             class="container mx-auto flex items-center justify-between"
@@ -92,34 +92,16 @@ import { ref } from "vue";
 
 const links = computed(() => ([
     {
-        name: "Home",
+        name: "Inicio",
         href: "/",
         icon: HomeIcon,
         class: "text-white hover:text-slate-300",
     },
     {
-        name: "Mirror",
-        href: "/mirror",
-        icon: UserCircleIcon,
-        class: "text-gray-700 hover:text-gray-900",
-    },
-    {
-        name: "Borges",
-        href: '/borges',
-        icon: ArrowRightOnRectangleIcon,
-        class: "text-gray-700 hover:text-gray-900",
-    },
-    {
-        name: "Sign Up",
-        href: "#/sign-up",
-        icon: UserPlusIcon,
-        class: "text-white hover:text-slate-300",
-    },
-    {
-        name: "Docs",
-        href: "https://www.material-tailwind.com/docs/react/installation",
+        name: "Trabajos",
+        href: "/works",
         icon: DocumentTextIcon,
-        class: "text-white hover:text-slate-300",
+        class: "text-gray-700 hover:text-gray-900",
     },
 ]));
 
@@ -127,7 +109,7 @@ const links = computed(() => ([
 const route = useRoute()
 
 const textColor = computed(() => {
-    return links.value.find(link => link.href === route.path).class ?? 'text-gray-700 hover:text-gray-900'
+    return links.value.find(link => link.href === route.path)?.class ?? 'text-gray-700 hover:text-gray-900'
 })
 
 const opened = ref(false);
