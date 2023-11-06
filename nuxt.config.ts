@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxtjs/tailwindcss",
     "nuxt-headlessui",
-    "nuxt-primevue",
   ],
   css: ["@/assets/main.scss"],
 });
