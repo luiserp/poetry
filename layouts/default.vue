@@ -1,6 +1,6 @@
 <template>
     <slot name="navbar">
-        <div class="lg:container z-50 mx-auto px-10 py-2 bg-gray-50">
+        <div class=" z-50 flex px-10 py-2 bg-gray-50">
             <Navbar></Navbar>
         </div>
     </slot>

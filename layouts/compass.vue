@@ -1,8 +1,8 @@
 <template>
   <div>
     <NuxtLayout>
-      <div class="flex pb-20">
-          <section class="container px-10 mt-10 text-justify">
+      <div class="flex flex-col md:flex-row lg:pb-20">
+          <section class="container px-10 mt-10 text-justify leading-8 text-gray-900">
             <slot />
           </section>
           <section class="flex items-center align-middle h-[80vh]">

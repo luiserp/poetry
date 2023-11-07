@@ -15,11 +15,11 @@
         >
           <div
             ref="text"
-            class="overflow-y-scroll h-[100vh] p-40 space-y-4"
+            class="overflow-y-scroll h-[100vh] pt-40 sm:px-20 lg:px-40 space-y-4"
           >
             <p 
               v-for="paragraph in data.doc.content"
-              class="select-none text-2xl">{{ paragraph }}</p>
+              class="select-none text-2xl leading-10">{{ paragraph }}</p>
           </div>
 
           <div 
@@ -55,7 +55,7 @@ function updateMagic(e) {
 function increaseDecrease(e) {
   // const percentage = Math.round(text.value.scrollTop / text.value.scrollHeight * 100);
 
-  const factor = 0.1;
+  const factor = 0.5;
   deltaY.value += e.deltaY * factor;
 
   if (deltaY.value < 0) {
@@ -94,8 +94,8 @@ p {
 .magic {
   z-index: 5;
   position: absolute;
-  min-width: 20px;
-  min-height: 20px;
+  min-width: 50px;
+  min-height: 50px;
   width: 0rem;
   height: 0rem;
   background: url("img/park/2.jpeg") 1024px 1024px fixed;

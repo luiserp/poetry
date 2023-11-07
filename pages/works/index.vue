@@ -11,9 +11,9 @@
               :key="article._path"
               :href="article._path"
             >
-              <div class="flex gap-8 hover:scale-105 w-[60%] transition-all duration-300">
+              <div class="flex flex-col md:flex-row gap-2 lg:gap-8 hover:scale-105 lg:w-[60%] transition-all duration-300">
                 <div
-                  class="max-h-[20%] max-w-[20%] overflow-hidden xl:aspect-h-8 xl:aspect-w-7"
+                  class="max-h-[20%] md:max-w-[20%] overflow-hidden xl:aspect-h-8 xl:aspect-w-7"
                 >
                   <img
                     :src="article.card"
@@ -21,7 +21,7 @@
                     class="object-cover"
                   />
                 </div>
-                <div>
+                <div class="md:max-w-[60%] lg:max-w-[100%]">
                   <h3 class="text-lg font-medium text-gray-900">
                     {{ article.title }}
                   </h3>
