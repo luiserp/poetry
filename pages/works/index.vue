@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <div class="container p-10">
+    <div class="container p-10 border-solid border mt-6 bg-gray-50 shadow-sm rounded-lg mx-4 w-[90%] min-h-screen">
       <ContentList path="/works">
         <template #default="{ list }">
           <div
@@ -11,7 +11,7 @@
               :key="article._path"
               :href="article._path"
             >
-              <div class="flex flex-col md:flex-row gap-2 lg:gap-8 hover:scale-105 lg:w-[60%] transition-all duration-300">
+              <div class="flex flex-col md:flex-row gap-4 lg:gap-8 hover:scale-105 lg:w-[60%] transition-all duration-300">
                 <div
                   class="max-h-[20%] md:max-w-[20%] overflow-hidden xl:aspect-h-8 xl:aspect-w-7"
                 >
