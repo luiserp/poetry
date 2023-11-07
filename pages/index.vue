@@ -1,9 +1,7 @@
 <template>
-  <NuxtLayout>
-
-    
+  <NuxtLayout>    
     <template #navbar>
-    <div class="container absolute left-2/4 z-50 mx-auto -translate-x-2/4 px-10 py-6">
+    <div class="container absolute left-2/4 z-50 mx-auto -translate-x-2/4 px-10 py-2">
         <Navbar />
     </div>
     </template>
@@ -103,11 +101,11 @@ import {
   StarIcon,
   UsersIcon,
 } from "@heroicons/vue/24/solid";
-import Button from "~/components/Core/Button/Button.vue";
-import Card from "~/components/Core/Card/Card.vue";
-import CardBody from "~/components/Core/Card/CardBody.vue";
-import CardHeader from "~/components/Core/Card/CardHeader.vue";
-import Navbar from '~/components/Core/Navbar/Navbar.vue';
+import Button from "@/components/Core/Button/Button.vue";
+import Card from "@/components/Core/Card/Card.vue";
+import CardBody from "@/components/Core/Card/CardBody.vue";
+import CardHeader from "@/components/Core/Card/CardHeader.vue";
+import Navbar from '@/components/Core/Navbar/Navbar.vue';
 
 const featuresData = [
   {

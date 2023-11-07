@@ -39,7 +39,8 @@
             </div>
             <button
                 class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-8 max-w-[32px] h-8 max-h-[32px] rounded-lg text-xs ml-auto text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-                type="button">
+                type="button"
+                :class="textColor">
                 <span @click="toggle" class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
                     <Transition
                         enter-active-class="transition ease-out duration-50"
@@ -103,6 +104,12 @@ const links = computed(() => ([
         icon: DocumentTextIcon,
         class: "text-gray-700 hover:text-gray-900",
     },
+    {
+        name: "Brujula",
+        href: "/compass",  
+        icon: ArrowRightOnRectangleIcon,
+        class: "text-gray-700 hover:text-gray-900",
+    }
 ]));
 
 
