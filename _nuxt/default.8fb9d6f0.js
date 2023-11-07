@@ -1,0 +1,1 @@
+import{N as t}from"./Navbar.fb88314c.js";import{c as o,i as e,F as r,o as s,a as n,b as l}from"./entry.1dfbf2c0.js";import"./nuxt-link.d89a85c5.js";const c={class:"lg:container z-50 mx-auto px-10 py-2 bg-gray-50"},_={__name:"default",setup(m){return(a,p)=>(s(),o(r,null,[e(a.$slots,"navbar",{},()=>[n("div",c,[l(t)])]),e(a.$slots,"default")],64))}};export{_ as default};
