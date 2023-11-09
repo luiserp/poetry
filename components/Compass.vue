@@ -1,5 +1,5 @@
 <template>
-  <div class="compass hover:scale-105 transition shadow-lg hover:shadow-2xl">
+  <div class="compass hover:scale-105 transition shadow-lg hover:shadow-2xl border-2">
     <div class="compass-inner">
       <div class="north">
 		<NuxtLink to="/compass/n">N</NuxtLink>
@@ -39,8 +39,8 @@ body {
 }
 
 .compass {
-	width: 80%;
-	height: 80%;
+	width: 250px;
+	height: 250px;
 	background-color: #F3F3F3;
 	border-radius: 100%;
 	background-image: -webkit-linear-gradient(top, #F7F7F7, #ECECEC);
@@ -49,24 +49,24 @@ body {
 }
 
 .compass-inner {
-	width: 90%;
-	height: 90%;
+	width: 230px;
+	height: 230px;
 	background-color: #3D3D3D;
 	border-radius: 100%;
 	position: relative;
-	left: 5%;
-	top: 5%;
+	left: 10px;
+	top: 10px;
 	border: 3px solid #C5C5C5;
 }
 
 .main-arrow {
-	height: 80%;
+	height: 200px;
 	width: 30px;
 	position: relative;
 	// center
-	left: 50%;
+	left: 120px;
 	margin-left: -20px;
-	top: 15%;
+	top: 10px;
 
 	transform-origin: center;
 	box-sizing:border-box;
@@ -104,39 +104,39 @@ body {
 }
 
 .north {
-	font-size: 24px;
+	font-size: 18px;
 	font-family: 'Lobster Two', cursive;
 	color: #FFF;
 	position: absolute;
-	left: 120px;
+	left: 100px;
 	top: 10px;
 }
 
 .east {
-	font-size: 24px;
+	font-size: 18px;
 	font-family: 'Lobster Two', cursive;
 	color: #FFF;
 	position: absolute;
-	left: 240px;
-	top: 120px;
+	left: 200px;
+	top: 100px;
 }
 
 .west {
-	font-size: 24px;
+	font-size: 18px;
 	font-family: 'Lobster Two', cursive;
 	color: #FFF;
 	position: absolute;
-	left: 20px;
-	top: 120px;
+	left: 10px;
+	top: 100px;
 }
 
 .south {
-	font-size: 24px;
+	font-size: 18px;
 	font-family: 'Lobster Two', cursive;
 	color: #FFF;
 	position: absolute;
-	left: 120px;
-	top: 220px;
+	left: 100px;
+	top: 190px;
 }
 
 @keyframes spin {
@@ -185,238 +185,5 @@ body {
 	100% {
 		-webkit-transform:scale(1) rotate(-180deg);
 	}
-}
-
-@media (max-width: 600px) {
-  .compass {
-    width: 200px;
-	height: 200px;
-	text-align: center;
-  }
-  
-  .compass-inner {
-	  width: 170px;
-	  height: 170px;
-	  left: 13px;
-	  top: 13px;
-  }
-  
-  .main-arrow {
-	width: 30px;
-	left: 78px;
-	width: 15px;
-	padding-top: 3px;
-  }
-  
-  .arrow-up {
-	border-bottom: 82.5px solid #EF5052;
-	border-left: 7.5px solid transparent;
-	border-right: 7.5px solid transparent;
-  }
-  
-   .arrow-down {
-	border-bottom: 82.5px solid #F3F3F3;
-	border-left: 7.5px solid transparent;
-	border-right: 7.5px solid transparent;
-  }
-  
-  .north {
-	  left: 78px;
-	  top: 10px;
-	  font-size: 16px;
-  }
-  
-  .south {
-	  font-size: 16px;
-	  left: 78px;
-	  top: 140px;
-  }
-  
-  .east {
-	  font-size: 16px;
-	  top: 72.5px;
-	  left: 145px;
-  }
-  
-  .west {
-	  font-size: 16px;
-	  left: 10px;
-	  top: 72.5px;
-  }
-}
-
-
-@media (max-width: 600px) {
-  .compass {
-    width: 200px;
-	height: 200px;
-	text-align: center;
-  }
-  
-  .compass-inner {
-	  width: 170px;
-	  height: 170px;
-	  left: 13px;
-	  top: 13px;
-  }
-  
-  .main-arrow {
-	width: 30px;
-	left: 78px;
-	width: 15px;
-	padding-top: 3px;
-  }
-  
-  .arrow-up {
-	border-bottom: 82.5px solid #EF5052;
-	border-left: 7.5px solid transparent;
-	border-right: 7.5px solid transparent;
-  }
-  
-   .arrow-down {
-	border-bottom: 82.5px solid #F3F3F3;
-	border-left: 7.5px solid transparent;
-	border-right: 7.5px solid transparent;
-  }
-  
-  .north {
-	  left: 78px;
-	  top: 10px;
-	  font-size: 16px;
-  }
-  
-  .south {
-	  font-size: 16px;
-	  left: 78px;
-	  top: 140px;
-  }
-  
-  .east {
-	  font-size: 16px;
-	  top: 72.5px;
-	  left: 145px;
-  }
-  
-  .west {
-	  font-size: 16px;
-	  left: 10px;
-	  top: 72.5px;
-  }
-}
-
-@media (max-width: 600px) {
-  .compass {
-    width: 200px;
-	height: 200px;
-	text-align: center;
-  }
-  
-  .compass-inner {
-	  width: 170px;
-	  height: 170px;
-	  left: 13px;
-	  top: 13px;
-  }
-  
-  .main-arrow {
-	width: 30px;
-	left: 78px;
-	width: 15px;
-	padding-top: 3px;
-  }
-  
-  .arrow-up {
-	border-bottom: 82.5px solid #EF5052;
-	border-left: 7.5px solid transparent;
-	border-right: 7.5px solid transparent;
-  }
-  
-   .arrow-down {
-	border-bottom: 82.5px solid #F3F3F3;
-	border-left: 7.5px solid transparent;
-	border-right: 7.5px solid transparent;
-  }
-  
-  .north {
-	  left: 78px;
-	  top: 10px;
-	  font-size: 16px;
-  }
-  
-  .south {
-	  font-size: 16px;
-	  left: 78px;
-	  top: 140px;
-  }
-  
-  .east {
-	  font-size: 16px;
-	  top: 72.5px;
-	  left: 145px;
-  }
-  
-  .west {
-	  font-size: 16px;
-	  left: 10px;
-	  top: 72.5px;
-  }
-}
-
-@media (max-width: 600px) {
-  .compass {
-    width: 200px;
-	height: 200px;
-	text-align: center;
-  }
-  
-  .compass-inner {
-	  width: 170px;
-	  height: 170px;
-	  left: 13px;
-	  top: 13px;
-  }
-  
-  .main-arrow {
-	width: 30px;
-	left: 78px;
-	width: 15px;
-	padding-top: 3px;
-  }
-  
-  .arrow-up {
-	border-bottom: 82.5px solid #EF5052;
-	border-left: 7.5px solid transparent;
-	border-right: 7.5px solid transparent;
-  }
-  
-   .arrow-down {
-	border-bottom: 82.5px solid #F3F3F3;
-	border-left: 7.5px solid transparent;
-	border-right: 7.5px solid transparent;
-  }
-  
-  .north {
-	  left: 78px;
-	  top: 10px;
-	  font-size: 16px;
-  }
-  
-  .south {
-	  font-size: 16px;
-	  left: 78px;
-	  top: 140px;
-  }
-  
-  .east {
-	  font-size: 16px;
-	  top: 72.5px;
-	  left: 145px;
-  }
-  
-  .west {
-	  font-size: 16px;
-	  left: 10px;
-	  top: 72.5px;
-  }
 }
 </style>
