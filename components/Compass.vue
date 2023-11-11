@@ -2,16 +2,28 @@
   <div class="compass hover:scale-105 transition shadow-lg hover:shadow-2xl border-2">
     <div class="compass-inner">
       <div class="north">
-		<NuxtLink to="/compass/n">N</NuxtLink>
+		<NuxtLink :to="{
+			path: '/compass/n',
+			query: { link: link },
+		}" >N</NuxtLink>
 	  </div>
       <div class="east">
-		<NuxtLink to="/compass/e">E</NuxtLink>
+		<NuxtLink :to="{
+			path: '/compass/e',
+			query: { link: link },
+		}">E</NuxtLink>
 	  </div>
       <div class="west">
-		<NuxtLink to="/compass/w">W</NuxtLink>
+		<NuxtLink :to="{
+			path: '/compass/w',
+			query: { link: link },
+		}">W</NuxtLink>
 	  </div>
       <div class="south">
-		<NuxtLink to="/compass/s">S</NuxtLink>
+		<NuxtLink :to="{
+			path: '/compass/s',
+			query: { link: link },
+		}">S</NuxtLink>
 	  </div>
       <div class="main-arrow">
         <div class="arrow-up"></div>
@@ -23,6 +35,11 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
+
+const props = defineProps({
+	link: String,
+});
+
 </script>
 
 <style lang="scss" scoped>

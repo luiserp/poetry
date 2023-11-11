@@ -22,8 +22,6 @@ const buttonVariant = computed(() => {
         'link': 'text-blue-500 hover:opacity-75 focus:ring focus:ring-blue-200 active:opacity-[0.85]',
     }
 
-    console.log(props.variant);
-
     return map[props.variant] ?? map['solid'];
 })
 

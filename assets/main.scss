@@ -1,34 +1,10 @@
-@tailwind base;
+@layer tailwind-base, primevue, tailwind-utilities;
 
-@layer base {
-    h1 {
-        @apply text-2xl;
-    }
-    h2 {
-        @apply text-xl;
-    }
-    h3 {
-        @apply text-lg;
-    }
-    h4 {
-        @apply text-base;
-    }
-    h5 {
-        @apply text-sm;
-    }
-    h6 {
-        @apply text-xs;
-    }
+@layer tailwind-base {
+  @tailwind base;
+}
 
-    p {
-        @apply text-base;
-    }
-
-    a {
-        @apply text-blue-500 hover:text-blue-600;
-    }
-
-    p {
-        @apply text-gray-500 leading-7 mb-4 mt-4 text-justify;
-    }
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
 }
