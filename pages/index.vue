@@ -88,9 +88,23 @@
         </div>
       </div>
     </section>
-    <div class="bg-blue-gray-50/50">
-      <!-- <Footer /> -->
-    </div>
+    <section class="px-8 pt-20 pb-48">
+        <div class="container mx-auto">
+          <div class="flex flex-col items-center justify-center">
+            <h2 class="text-center text-4xl font-semibold">Here are our heroes</h2>
+            <p class="text-center mt-5 text-2xl text-gray-500 w-[60%]"> According to the National Oceanic and Atmospheric Administration,
+              Ted, Scambos, NSIDClead scentist, puts the potentially record
+              maximum.
+            </p>
+          </div>
+          <div class="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 lg:grid-cols-4">
+            <TeamCard img="/img/team-1.jpg" name="Ryan Tompson" job="Web Developer" />
+            <TeamCard img="/img/team-2.jpg" name="Ryan Tompson" job="Web Developer"/>
+            <TeamCard img="/img/team-3.jpg" name="Ryan Tompson" job="Web Developer"/>
+            <TeamCard img="/img/team-4.png" name="Ryan Tompson" job="Web Developer"/>  
+          </div>
+        </div>
+      </section>
   </NuxtLayout>
 </template>
 

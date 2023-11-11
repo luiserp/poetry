@@ -50,7 +50,10 @@
         La {{ femaleOrder }} de las letras del Nombre ha sido articulada.
       </p>
 
-      <NuxtLink to="/compass">
+      <NuxtLink :to="{
+        path: '/compass',
+        hash: '#' + backQuery,
+      }">
         <Button class="mt-10"> Volver </Button>
       </NuxtLink>
     </section>

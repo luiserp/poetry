@@ -1,0 +1,62 @@
+<template>
+  <div
+    class="relative flex flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-none text-center"
+  >
+    <img
+      :src="img"
+      alt="Romina Hadid"
+      class="inline-block relative object-cover object-center rounded-2xl h-full w-full shadow-lg shadow-gray-500/25"
+    />
+    <h5
+      class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mt-6 mb-1"
+    >
+        {{ name }}
+    </h5>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-500"
+    >
+        {{ job }}
+    </p>
+    <div class="mx-auto mt-5">
+      <div class="flex items-center gap-2">
+        <button
+          class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-light-blue-500 hover:bg-light-blue-500/10 active:bg-light-blue-500/30"
+          type="button"
+        >
+          <span
+            class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
+            ><i class="fa-brands text-lg fa-twitter"></i
+          ></span></button
+        ><button
+          class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-500 hover:bg-blue-500/10 active:bg-blue-500/30"
+          type="button"
+        >
+          <span
+            class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
+            ><i class="fa-brands text-lg fa-facebook"></i
+          ></span></button
+        ><button
+          class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-pink-500 hover:bg-pink-500/10 active:bg-pink-500/30"
+          type="button"
+        >
+          <span
+            class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
+            ><i class="fa-brands text-lg fa-dribbble"></i
+          ></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+
+const props = defineProps({
+    img: String,
+    name: String,
+    job: String,
+})
+
+</script>
+
+<style lang="scss" scoped></style>
