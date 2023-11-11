@@ -104,7 +104,7 @@
           </p>
         </div>
         <div
-          class="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 lg:grid-cols-4"
+          class="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 lg:grid-cols-6"
         >
           <TeamCard
             img="/img/team-1.jpg"
@@ -132,6 +132,20 @@
             job="Web Developer"
             data-aos="fade-up"
             data-aos-delay="300"
+          />
+          <TeamCard
+            img="/img/team-1.jpg"
+            name="Ryan Tompson"
+            job="Web Developer"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          />
+          <TeamCard
+            img="/img/team-2.jpg"
+            name="Ryan Tompson"
+            job="Web Developer"
+            data-aos="fade-up"
+            data-aos-delay="500"
           />
         </div>
       </div>
