@@ -1,7 +1,7 @@
 <template>
   <footer
     aria-labelledby="footer-heading"
-    class="border-t border-gray-200 bg-white"
+    class="border-t border-gray-200 bg-gray-800"
   >
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -11,11 +11,12 @@
         >
           <!-- Image section -->
           <div class="col-span-1 md:col-span-2 lg:col-start-1 lg:row-start-1">
-            <img
+            <!-- <img
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
               alt=""
               class="h-8 w-auto"
-            />
+            /> -->
+            <NuxtLink class="text-white" to="/">Poetry</NuxtLink>
           </div>
 
           <!-- Sitemap sections -->
@@ -26,7 +27,7 @@
               class="grid grid-cols-1 gap-y-12 sm:col-span-2 sm:grid-cols-2 sm:gap-x-8"
             >
               <div>
-                <h3 class="text-sm font-medium text-gray-900">Products</h3>
+                <h3 class="text-sm font-medium text-white">Nosotros</h3>
                 <ul role="list" class="mt-6 space-y-6">
                   <li
                     v-for="item in footerNavigation.products"
@@ -35,14 +36,14 @@
                   >
                     <a
                       :href="item.href"
-                      class="text-gray-500 hover:text-gray-600"
+                      class="text-gray-500 hover:text-gray-300"
                       >{{ item.name }}</a
                     >
                   </li>
                 </ul>
               </div>
               <div>
-                <h3 class="text-sm font-medium text-gray-900">Company</h3>
+                <h3 class="text-sm font-medium  text-white">Enlaces</h3>
                 <ul role="list" class="mt-6 space-y-6">
                   <li
                     v-for="item in footerNavigation.company"
@@ -51,38 +52,20 @@
                   >
                     <a
                       :href="item.href"
-                      class="text-gray-500 hover:text-gray-600"
+                      class="text-gray-500 hover:text-gray-300"
                       >{{ item.name }}</a
                     >
                   </li>
                 </ul>
               </div>
-            </div>
-            <div>
-              <h3 class="text-sm font-medium text-gray-900">
-                Customer Service
-              </h3>
-              <ul role="list" class="mt-6 space-y-6">
-                <li
-                  v-for="item in footerNavigation.customerService"
-                  :key="item.name"
-                  class="text-sm"
-                >
-                  <a
-                    :href="item.href"
-                    class="text-gray-500 hover:text-gray-600"
-                    >{{ item.name }}</a
-                  >
-                </li>
-              </ul>
-            </div>
+          </div>
           </div>
         </div>
       </div>
 
       <div class="border-t border-gray-100 py-10 text-center">
-        <p class="text-sm text-gray-500">
-          &copy; 2021 Your Company, Inc. All rights reserved.
+        <p class="text-sm text-gray-200">
+          &copy; 2023 UWO. All rights reserved.
         </p>
       </div>
     </div>
@@ -92,15 +75,15 @@
 <script setup>
 const footerNavigation = {
   products: [
-    { name: "Bags", href: "#" },
-    { name: "Tees", href: "#" },
+    { name: "Sobre nosotros", href: "#" },
+    { name: "Contacto", href: "#" },
     // { name: "Objects", href: "#" },
     // { name: "Home Goods", href: "#" },
     // { name: "Accessories", href: "#" },
   ],
   company: [
-    { name: "Who we are", href: "#" },
-    { name: "Sustainability", href: "#" },
+    { name: "Borges", href: "#" },
+    { name: "Cortazar", href: "#" },
     // { name: "Press", href: "#" },
     // { name: "Careers", href: "#" },
     // { name: "Terms & Conditions", href: "#" },
