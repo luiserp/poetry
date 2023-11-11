@@ -4,7 +4,7 @@
       class="container px-10 mt-6 text-justify leading-8 text-gray-900 p-10 border-solid border bg-gray-50 shadow-sm rounded-lg mx-4 w-[90%] min-h-screen"
     >
       <p class="select-none text-xl leading-10">
-        El _______ crimen ocurrió en el Hôtel du Nord, ese alto prisma que
+        El {{ maleOrder }} crimen ocurrió en el Hôtel du Nord, ese alto prisma que
         domina el estuario cuyas aguas tienen el color del desierto. A esa torre
         (que muy notoriamente reúne la aborrecida blancura de un sanatorio, la
         numerada divisibilidad de una cárcel y la apariencia general de una casa
@@ -75,10 +75,13 @@
         máquina de escribir una hoja de papel con esta sentencia inconclusa
       </p>
       <p class="select-none text-xl leading-10">
-        La _________ letra del Nombre ha sido articulada.
+        La {{ femaleOrder }} letra del Nombre ha sido articulada.
       </p>
 
-      <NuxtLink to="/compass">
+      <NuxtLink :to="{
+        path: '/compass',
+        hash: '#' + backQuery,
+      }">
         <Button class="mt-10"> Volver </Button>
       </NuxtLink>
     </section>
@@ -87,6 +90,13 @@
 
 <script setup>
 import Button from "~/components/Core/Button/Button.vue";
+import {ref, computed} from "vue";
+import useOrder from "@/composables/useOrder.js";
+
+const route = useRoute();
+const backQuery = ref(route.query.link);
+const {maleOrder, femaleOrder} = useOrder(backQuery.value);
+
 </script>
 
 <style lang="scss" scoped></style>

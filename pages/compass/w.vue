@@ -4,7 +4,7 @@
       class="container px-10 mt-6 text-justify leading-8 text-gray-900 p-10 border-solid border bg-gray-50 shadow-sm rounded-lg mx-4 w-[90%] min-h-screen"
     >
       <p class="select-none text-xl leading-10">
-        El ________crimen ocurrió la noche del tres de febrero. Poco antes de la
+        El {{maleOrder}} crimen ocurrió la noche del tres de febrero. Poco antes de la
         una, el teléfono resonó en la oficina del comisario Treviranus. Con
         ávido sigilo, habló un hombre de voz gutural; dijo que se llamaba
         Ginzberg (o Ginsburg), y que estaba dispuesto a comunicar, por una
@@ -47,7 +47,7 @@
         Treviranus vio la sentencia. Era casi previsible; decía:
       </p>
       <p class="select-none text-xl leading-10">
-        La _______ de las letras del Nombre ha sido articulada.
+        La {{ femaleOrder }} de las letras del Nombre ha sido articulada.
       </p>
 
       <NuxtLink to="/compass">
@@ -58,8 +58,13 @@
 </template>
 
 <script setup>
-import Compass from "@/components/Compass.vue";
 import Button from "~/components/Core/Button/Button.vue";
+import {ref, computed} from "vue";
+import useOrder from "@/composables/useOrder.js";
+
+const route = useRoute();
+const backQuery = ref(route.query.link);
+const {maleOrder, femaleOrder} = useOrder(backQuery.value);
 </script>
 
 <style lang="scss" scoped></style>

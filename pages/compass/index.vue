@@ -20,7 +20,7 @@
       </p>
       <!-- First -->
       <div id="first">
-        <Button class="my-10" @click="show = true">
+        <Button class="my-10" @click="first">
           ESCOJE TU PRIMER CRIMEN EN LA BRÚJULA
         </Button>
       </div>
@@ -56,7 +56,7 @@
 
       <!-- Second -->
       <div id="second">
-        <Button class="my-10" @click="show = true">
+        <Button class="my-10" @click="second">
           ELIGE EL SEGUNDO CRIMEN EN LA BRÚJULA
         </Button>
       </div>
@@ -111,7 +111,7 @@
       </p>
       <!-- Third -->
       <div id="third">
-        <Button class="my-10" @click="show = true">
+        <Button class="my-10" @click="third">
           ELIGE EL TERCER CRIMEN EN LA BRÚJULA
         </Button>
       </div>
@@ -315,7 +315,7 @@
 
       <Modal :show="show" @close="show = false">
         <div class="w-[100%] h-80 flex flex-col justify-center items-center">
-          <Compass link="first" />
+          <Compass :link="link" />
         </div>
       </Modal>
     </section>
@@ -329,6 +329,32 @@ import { ref } from "vue";
 import Button from "~/components/Core/Button/Button.vue";
 
 const show = ref(false);
+const link = ref("");
+
+function first() {
+  link.value = "first";
+  showModal();
+}
+
+function second() {
+  link.value = "second";
+  showModal();
+}
+
+function third() {
+  link.value = "third";
+  showModal();
+}
+
+function showModal() {
+  show.value = true;
+}
+
+
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+html {
+  scroll-behavior: smooth;
+}
+</style>
