@@ -1,9 +1,11 @@
 <template>
-  <NuxtLayout>    
+  <NuxtLayout>
     <template #navbar>
-    <div class="container absolute left-2/4 z-50 mx-auto -translate-x-2/4 px-10 py-2">
+      <div
+        class="container absolute left-2/4 z-50 mx-auto -translate-x-2/4 px-10 py-2"
+      >
         <Navbar />
-    </div>
+      </div>
     </template>
 
     <div
@@ -17,18 +19,19 @@
       />
       <div class="max-w-8xl container relative mx-auto">
         <div class="flex flex-wrap items-center">
-          <div class="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
-            <h1 class="text-4xl mb-6 font-black text-white">
-              Poeticas de la literatura.
-            </h1>
 
-            <p class="text-lg text-white opacity-80">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Recusandae ex ab incidunt, modi corporis dolorem. Minus veritatis,
-              impedit doloremque ipsa numquam nostrum? Blanditiis aut modi sunt
-              qui aperiam libero sed.
-            </p>
-          </div>
+            <div class="ml-auto mr-auto w-full px-4 text-center lg:w-8/12" data-aos="fade-up">
+              <h1 class="text-4xl mb-6 font-black text-white">
+                Poeticas de la literatura
+              </h1>
+
+              <p class="text-lg text-white opacity-80">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Recusandae ex ab incidunt, modi corporis dolorem. Minus
+                veritatis, impedit doloremque ipsa numquam nostrum? Blanditiis
+                aut modi sunt qui aperiam libero sed.
+              </p>
+            </div>
         </div>
       </div>
     </div>
@@ -45,7 +48,7 @@
           />
         </div>
         <div class="mt-32 flex flex-wrap items-center">
-          <div class="mx-auto -mt-8 w-full px-4 md:w-5/12">
+          <div class="mx-auto -mt-8 w-full px-4 md:w-5/12" data-aos="fade-right">
             <div
               class="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg"
             >
@@ -66,7 +69,7 @@
           <div
             class="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0"
           >
-            <NuxtLink href="/works/parks">
+            <NuxtLink href="/works/parks" data-aos="fade-left">
               <Card class="shadow-lg shadow-gray-500/10">
                 <CardHeader class="relative h-96">
                   <img
@@ -88,23 +91,51 @@
         </div>
       </div>
     </section>
-    <section class="px-8 pt-20 pb-48">
-        <div class="container mx-auto">
-          <div class="flex flex-col items-center justify-center">
-            <h2 class="text-center text-4xl font-semibold">Here are our heroes</h2>
-            <p class="text-center mt-5 text-2xl text-gray-500 w-[60%]"> According to the National Oceanic and Atmospheric Administration,
-              Ted, Scambos, NSIDClead scentist, puts the potentially record
-              maximum.
-            </p>
-          </div>
-          <div class="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 lg:grid-cols-4">
-            <TeamCard img="/img/team-1.jpg" name="Ryan Tompson" job="Web Developer" />
-            <TeamCard img="/img/team-2.jpg" name="Ryan Tompson" job="Web Developer"/>
-            <TeamCard img="/img/team-3.jpg" name="Ryan Tompson" job="Web Developer"/>
-            <TeamCard img="/img/team-4.png" name="Ryan Tompson" job="Web Developer"/>  
-          </div>
+    <section id="team" class="px-8 pt-20 pb-48">
+      <div class="container mx-auto">
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="text-center text-4xl font-semibold">
+            Here are our heroes
+          </h2>
+          <p class="text-center mt-5 text-2xl text-gray-500 w-[60%]">
+            According to the National Oceanic and Atmospheric Administration,
+            Ted, Scambos, NSIDClead scentist, puts the potentially record
+            maximum.
+          </p>
         </div>
-      </section>
+        <div
+          class="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 lg:grid-cols-4"
+        >
+          <TeamCard
+            img="/img/team-1.jpg"
+            name="Ryan Tompson"
+            job="Web Developer"
+            data-aos="fade-up"
+          />
+          <TeamCard
+            img="/img/team-2.jpg"
+            name="Ryan Tompson"
+            job="Web Developer"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          />
+          <TeamCard
+            img="/img/team-3.jpg"
+            name="Ryan Tompson"
+            job="Web Developer"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          />
+          <TeamCard
+            img="/img/team-4.png"
+            name="Ryan Tompson"
+            job="Web Developer"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          />
+        </div>
+      </div>
+    </section>
   </NuxtLayout>
 </template>
 
@@ -119,7 +150,7 @@ import Button from "@/components/Core/Button/Button.vue";
 import Card from "@/components/Core/Card/Card.vue";
 import CardBody from "@/components/Core/Card/CardBody.vue";
 import CardHeader from "@/components/Core/Card/CardHeader.vue";
-import Navbar from '@/components/Core/Navbar/Navbar.vue';
+import Navbar from "@/components/Core/Navbar/Navbar.vue";
 
 const featuresData = [
   {
@@ -145,3 +176,10 @@ const featuresData = [
   },
 ];
 </script>
+
+
+<style>
+html{
+  scroll-behavior: smooth;
+}
+</style>

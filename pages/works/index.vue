@@ -7,9 +7,11 @@
             class="flex space-y-4 flex-col"
           >
             <NuxtLink
-              v-for="article in list"
+              v-for="(article, index) in list"
               :key="article._path"
               :href="article._path"
+              data-aos="fade-right"
+              :data-aos-delay="100 * index"
             >
               <div class="flex flex-col md:flex-row gap-4 lg:gap-8 hover:scale-105 lg:w-[60%] transition-all duration-300">
                 <div

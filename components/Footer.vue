@@ -34,10 +34,10 @@
                     :key="item.name"
                     class="text-sm"
                   >
-                    <a
+                    <NuxtLink
                       :href="item.href"
                       class="text-gray-500 hover:text-gray-300"
-                      >{{ item.name }}</a
+                      >{{ item.name }}</NuxtLink
                     >
                   </li>
                 </ul>
@@ -50,10 +50,10 @@
                     :key="item.name"
                     class="text-sm"
                   >
-                    <a
-                      :href="item.href"
+                    <NuxtLink
+                      :to="item.href"
                       class="text-gray-500 hover:text-gray-300"
-                      >{{ item.name }}</a
+                      >{{ item.name }}</NuxtLink
                     >
                   </li>
                 </ul>
@@ -75,7 +75,7 @@
 <script setup>
 const footerNavigation = {
   products: [
-    { name: "Sobre nosotros", href: "#" },
+    { name: "Sobre nosotros", href: "/#team" },
     { name: "Contacto", href: "#" },
     // { name: "Objects", href: "#" },
     // { name: "Home Goods", href: "#" },
