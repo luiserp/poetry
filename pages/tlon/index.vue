@@ -2,7 +2,8 @@
   <NuxtLayout>
     <section
       class="container px-10 mt-6 text-justify leading-8 text-gray-900 p-10 border-solid border bg-gray-50 shadow-sm rounded-lg mx-4 w-[90%] min-h-screen"
-    >
+      data-aos="fade-up"
+      >
       <p class="select-none text-xl leading-10">
         Al principio se creyó que Tlön era un mero caos, una irresponsable
         licencia de la imaginación; ahora se sabe que es un cosmos y las íntimas

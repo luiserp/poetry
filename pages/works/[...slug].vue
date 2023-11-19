@@ -19,7 +19,7 @@
           >
             <p 
               v-for="paragraph in data.doc.content"
-              class="select-none text-2xl leading-10">{{ paragraph }}</p>
+              class="select-none text-2xl leading-10 text-justify">{{ paragraph }}</p>
           </div>
 
           <div 
@@ -29,6 +29,11 @@
             ></div>
         </div>
     </ContentDoc>
+
+    <template #footer>
+      <!-- Empty -->
+      <div></div>
+    </template>
   </NuxtLayout>
 </template>
 

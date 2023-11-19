@@ -2,8 +2,8 @@
     <Card>
         <CardBody>
             <IconButton :icon="icon" :color="color" />
-            <h2 class="card-title">{{ title }}</h2>
-            <p>{{ description }}</p>
+            <h2 class="card-title text-lg font-semibold">{{ title }}</h2>
+            <p class="text-justify">{{ description }}</p>
             <div class="card-actions justify-end"></div>
         </CardBody>
     </Card>

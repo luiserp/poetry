@@ -2,7 +2,8 @@
   <NuxtLayout>
     <section
       class="container px-10 mt-6 text-justify leading-8 text-gray-900 p-10 border-solid border bg-gray-50 shadow-sm rounded-lg mx-4 w-[90%] min-h-screen"
-    >
+      data-aos="fade-up"
+      >
       <!-- Intro -->
       <p class="select-none text-xl leading-10">
         De los muchos problemas que ejercitaron la temeraria perspicacia de
@@ -25,7 +26,6 @@
         </Button>
       </div>
 
-      <!-- Second -->
       <p class="select-none text-xl leading-10">
         Lönnrot se abstuvo de sonreír. Bruscamente bibliófilo o hebraísta,
         ordenó que le hicieran un paquete con los libros del muerto y los llevó
@@ -158,6 +158,14 @@
         oriente y otro en el occidente) lo separaban de la hora anhelada por los
         buscadores del Nombre.
       </p>
+
+      <!-- Fourth -->
+      <div id="fourth">
+        <Button class="my-10" @click="fourth">
+          ELIGE EL CUARTO CRIMEN EN LA BRÚJULA
+        </Button>
+      </div>
+
       <p class="select-none text-xl leading-10">
         Una herrumbrada verja definía el perímetro irregular de la quinta. El
         portón principal estaba cerrado. Lönnrot, sin mucha esperanza de entrar,
@@ -343,6 +351,11 @@ function second() {
 
 function third() {
   link.value = "third";
+  showModal();
+}
+
+function fourth() {
+  link.value = "fourth";
   showModal();
 }
 

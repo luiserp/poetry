@@ -26,10 +26,7 @@
               </h1>
 
               <p class="text-lg text-white opacity-80">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Recusandae ex ab incidunt, modi corporis dolorem. Minus
-                veritatis, impedit doloremque ipsa numquam nostrum? Blanditiis
-                aut modi sunt qui aperiam libero sed.
+                Donde la lectura es un juego y cada clic abre un nuevo mundo literario. ¡Sumérgete en la aventura!
               </p>
             </div>
         </div>
@@ -165,28 +162,29 @@ import Card from "@/components/Core/Card/Card.vue";
 import CardBody from "@/components/Core/Card/CardBody.vue";
 import CardHeader from "@/components/Core/Card/CardHeader.vue";
 import Navbar from "@/components/Core/Navbar/Navbar.vue";
+import FeatureCard from "@/components/FeatureCard.vue";
 
 const featuresData = [
   {
     color: "blue",
-    title: "Awarded Agency",
+    title: "Interactividad Literaria",
     icon: StarIcon,
     description:
-      "Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.",
+      "Sumérgete en una experiencia única donde la lectura se convierte en un juego interactivo, explorando los mundos literarios de Borges y Cortázar de manera innovadora.",
   },
   {
     color: "red",
-    title: "Free Revisions",
+    title: "Contenido Diverso",
     icon: ArrowPathIcon,
     description:
-      "Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.",
+      "Descubre secciones llenas de textos, juegos y laberintos borgeanos y cortazianos. Desde clásicos como \"Rayuela\" hasta obras menos conocidas, el sitio ofrece una variedad de contenidos para satisfacer la curiosidad del lector-jugador.",
   },
   {
     color: "teal",
-    title: "Verified Company",
+    title: "Contexto Ampliado",
     icon: FingerPrintIcon,
     description:
-      "Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!",
+      "Además de la diversión literaria, el sitio proporciona recursos teóricos y prácticos, como libros, artículos y reseñas, para comprender mejor los contextos de producción, circulación y recepción de las obras incorporadas. Una experiencia completa que va más allá del juego puro.",
   },
 ];
 </script>
