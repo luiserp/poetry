@@ -87,7 +87,7 @@
 </template>
 
 <script setup>
-import { ArrowRightOnRectangleIcon, Bars3Icon, DocumentIcon, DocumentTextIcon, HomeIcon, MapPinIcon, UserCircleIcon, UserPlusIcon, XMarkIcon } from "@heroicons/vue/24/solid";
+import { ArrowRightOnRectangleIcon, Bars3Icon, DocumentIcon, DocumentTextIcon, HomeIcon, MapPinIcon, PhotoIcon, UserCircleIcon, UserPlusIcon, XMarkIcon } from "@heroicons/vue/24/solid";
 import { computed } from "vue";
 import { ref } from "vue";
 import CompassIcon from "../Icons/CompassIcon.vue";
@@ -100,9 +100,9 @@ const links = computed(() => ([
         class: "text-white hover:text-slate-300",
     },
     {
-        name: "Trabajos",
+        name: "Imágenes Reveladoras",
         href: "/works",
-        icon: DocumentTextIcon,
+        icon: PhotoIcon,
         class: "text-gray-700 hover:text-gray-900",
     },
     {

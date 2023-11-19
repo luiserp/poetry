@@ -61,8 +61,8 @@
 
       <Modal :show="show" @close="show = false">
         <div
-        class="w-[100%] h-80 flex flex-col justify-center items-center"
-        >
+          class="w-[100%] h-80 flex flex-col justify-center items-center"
+          >
         <h2 class="text-lg font-semibold mb-2">Opción: <span class="uppercase"> {{ option }}</span></h2>
           <p class="px-4 select-none text-lg leading-10 text-justify">{{ text }}</p>
       </div>
