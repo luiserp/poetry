@@ -59,6 +59,8 @@
         <Button class="my-10" @click="showOption('c')"> C </Button>
       </div>
 
+      <NuxtLink href="/tlon/justification"><Button class=""> Justificacíon </Button></NuxtLink> 
+
       <Modal :show="show" @close="show = false">
         <div
           class="w-[100%] h-80 flex flex-col justify-center items-center"
@@ -75,6 +77,10 @@
 import Button from "~/components/Core/Button/Button.vue";
 import Modal from "~/components/Core/Modal.vue";
 import { ref } from "vue";
+
+useHead({
+  title: 'Universos De Elección',
+})
 
 const show = ref(false);
 const text = ref("");

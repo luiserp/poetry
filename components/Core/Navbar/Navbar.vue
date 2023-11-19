@@ -106,13 +106,13 @@ const links = computed(() => ([
         class: "text-gray-700 hover:text-gray-900",
     },
     {
-        name: "Brújula",
+        name: "El Girar de Destinos",
         href: "/compass",  
         icon: CompassIcon,
         class: "text-gray-700 hover:text-gray-900",
     },
     {
-        name: "Tlön",
+        name: "Universos de Elección",
         href: "/tlon",  
         icon: MapPinIcon,
         class: "text-gray-700 hover:text-gray-900",

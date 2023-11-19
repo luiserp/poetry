@@ -326,7 +326,11 @@
           <Compass :link="link" />
         </div>
       </Modal>
+
+      <NuxtLink href="/compass/justification"><Button class="my-6"> Justificacíon </Button></NuxtLink> 
     </section>
+
+
   </NuxtLayout>
 </template>
 
@@ -335,6 +339,10 @@ import Compass from "@/components/Compass.vue";
 import Modal from "~/components/Core/Modal.vue";
 import { ref } from "vue";
 import Button from "~/components/Core/Button/Button.vue";
+
+useHead({
+  title: 'El Girar De Destinos',
+})
 
 const show = ref(false);
 const link = ref("");

@@ -43,7 +43,7 @@
                 </ul>
               </div>
               <div>
-                <h3 class="text-sm font-medium  text-white">Enlaces</h3>
+                <h3 class="text-sm font-medium  text-white">Teoría</h3>
                 <ul role="list" class="mt-6 space-y-6">
                   <li
                     v-for="item in footerNavigation.company"
@@ -82,8 +82,8 @@ const footerNavigation = {
     // { name: "Accessories", href: "#" },
   ],
   company: [
-    { name: "Borges", href: "#" },
-    { name: "Cortazar", href: "#" },
+    { name: "Universos de Elección", href: "/tlon/justification" },
+    { name: "El Girar de Destinos", href: "/compass/justification" },
     // { name: "Press", href: "#" },
     // { name: "Careers", href: "#" },
     // { name: "Terms & Conditions", href: "#" },

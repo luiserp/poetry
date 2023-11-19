@@ -50,4 +50,8 @@
   </NuxtLayout>
 </template>
 
-<script setup></script>
+<script setup>
+useHead({
+  title: 'Imágenes Reveladoras',
+})
+</script>
