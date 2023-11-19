@@ -27,7 +27,7 @@
               class="grid grid-cols-1 gap-y-12 sm:col-span-2 sm:grid-cols-2 sm:gap-x-8"
             >
               <div>
-                <h3 class="text-sm font-medium text-white">Nosotros</h3>
+                <h3 class="text-sm font-medium text-white">Secciones</h3>
                 <ul role="list" class="mt-6 space-y-6">
                   <li
                     v-for="item in footerNavigation.products"
@@ -75,8 +75,10 @@
 <script setup>
 const footerNavigation = {
   products: [
+    { name: "Imágenes Reveladoras", href: "/works" },
+    { name: "El Girar De Destinos", href: "/compass" },
+    { name: "Universos De Elección", href: "/tlon" },
     { name: "Sobre nosotros", href: "/about" },
-    { name: "Contacto", href: "#" },
     // { name: "Objects", href: "#" },
     // { name: "Home Goods", href: "#" },
     // { name: "Accessories", href: "#" },
