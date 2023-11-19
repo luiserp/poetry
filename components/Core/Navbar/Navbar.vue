@@ -116,6 +116,12 @@ const links = computed(() => ([
         href: "/tlon",  
         icon: MapPinIcon,
         class: "text-gray-700 hover:text-gray-900",
+    },
+    {
+        name: "Nosotros",
+        href: "/about",  
+        icon: UserCircleIcon,
+        class: "text-gray-700 hover:text-gray-900",
     }
 ]));
 
