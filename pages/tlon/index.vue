@@ -1,64 +1,97 @@
 <template>
   <NuxtLayout>
     <section
-      class="container px-10 mt-6 text-justify leading-8 text-gray-900 p-10 border-solid border bg-gray-50 shadow-sm rounded-lg mx-4 w-[90%] min-h-screen"
+      class="container px-10 mt-6 text-justify leading-8 text-gray-900 p-10 border-solid border bg-gray-50 shadow-sm rounded-lg mx-4 w-[90%] min-h-screen space-y-4"
       data-aos="fade-up"
-      >
-      <p class="select-none text-xl leading-10">
-        Al principio se creyó que Tlön era un mero caos, una irresponsable
-        licencia de la imaginación; ahora se sabe que es un cosmos y las íntimas
-        leyes que lo rigen han sido formuladas, siquiera en modo
-        provisional.Básteme recordar que las contradicciones aparentes del
-        Onceno Tomo son la piedra fundamental de la prueba de que existen los
-        otros: tan lúcido y tan justo es el orden que se ha observado en él. Las
-        revistas populares han divulgado, con perdonable exceso, la zoología y
-        la topografía de Tlön; yo pienso que sus
-        <Dropdown :options="firstOption" v-model="firstSelect" /> y sus torres
-        de <Dropdown :options="secondOption" v-model="secondSelect" /> no merecen, tal vez, la continua atención de todos los
-        hombres. Yo me atrevo a pedir unos minutos para su concepto del
-        universo. Hume notó para siempre que los argumentos de Berkeley no
-        admiten la menor réplica y no causan la menor convicción. Ese dictamen
-        es del todo verídico en su aplicación a la tierra; del todo falso en
-        Tlön. Las naciones de ese planeta son -congénitamente- idealistas. Su
-        lenguaje y las derivaciones de su lenguaje -la religión, las letras, la
-        metafísica- presuponen el idealismo. El mundo para ellos no es un
-        concurso de objetos en el espacio; es una serie heterogénea de actos
-        independientes. Es sucesivo, temporal, no espacial. No hay sustantivos
-        en la conjetural Ursprache de Tlön, de la que proceden los idiomas
-        "actuales" y los dialectos: hay verbos impersonales, calificados por
-        sufijos (o prefijos) monosilábicos de valor adverbial. Por ejemplo: no
-        hay palabra que corresponda a la palabra luna, pero hay un verbo que
-        sería en español lunecer o lunar. Surgió la luna sobre el río se dice
-        hlör u fang axaxaxas mlö o sea en su orden: hacia arriba (upward) detrás
-        duradero-fluir luneció. (Xul Solar traduce con brevedad: upa tras
-        perfluyue lunó. Upward, behind the onstreaming it mooned.
+    >
+      <p class="select-none text-lg leading-10">
+        Aquí doy término a la parte personal de mi narración. Lo demás está en
+        la memoria (cuando no en la esperanza o en el temor) de todos mis
+        lectores. Básteme recordar o mencionar los hechos subsiguientes, con una
+        mera brevedad de palabras que el cóncavo recuerdo general enriquecerá o
+        ampliará. Hacia 1944 un investigador del diario The American (de
+        Nashville, Tennessee) exhumó en una biblioteca de Memphis los cuarenta
+        volúmenes de la Primera Enciclopedia de Tlön. Hasta el día de hoy se
+        discute si ese descubrimiento fue casual o si lo consintieron los
+        directores del todavía nebuloso Orbís Tertius. Es verosímil lo segundo.
+        Algunos rasgos increíbles del Onceno Tomo (verbigracia, la
+        multiplicación de los hrönir) han sido eliminados o atenuados en el
+        ejemplar de Memphis; es razonable imaginar que esas tachaduras obedecen
+        al plan de exhibir un mundo que no sea demasiado incompatible con el
+        mundo real. La diseminación de objetos de Tlön en diversos países
+        complementaría ese plan...6 El hecho es que la prensa internacional
+        voceó infinitamente el "hallazgo". Manuales, antologías, resúmenes,
+        versiones literales, reimpresiones autorizadas y reimpresiones piráticas
+        de la Obra Mayor de los Hombres abarrotaron y siguen abarrotando la
+        tierra. Casi inmediatamente, la realidad cedió en más de un punto. Lo
+        cierto es que anhelaba ceder. Hace diez años bastaba cualquier simetría
+        con apariencia de orden -el materialismo dialéctico, el antisemitismo,
+        el nazismo- para embelesar a los hombres. ¿Cómo no someterse a Tlön, a
+        la minuciosa y vasta evidencia de un planeta ordenado? Inútil responder
+        que la realidad también está ordenada. Quizá lo esté, pero de acuerdo a
+        leyes divinas -traduzco: a leyes inhumanas- que no acabamos nunca de
+        percibir. Tlön será un laberinto, pero es un laberinto urdido por
+        hombres, un laberinto destinado a que lo descifren los hombres.
       </p>
+
+      <p class="select-none text-lg leading-10">
+        El contacto y el hábito de Tlön han desintegrado este mundo. Encantada
+        por su rigor, la humanidad olvida y torna a olvidar que es un rigor de
+        ajedrecistas, no de ángeles. Ya ha penetrado en las escuelas el
+        (conjetural), "idioma primitivo" de Tlön; ya la enseñanza de su historia
+        armoniosa (y llena de episodios conmovedores) ha obliterado a la que
+        presidió mi niñez; ya en las memorias un pasado ficticio ocupa el sitio
+        de otro, del que nada sabemos con certidumbre -ni siquiera que es falso.
+        Han sido reformadas la numismática, la farmacología y la arqueología.
+        Entiendo que la biología y las matemáticas aguardan también su avatar...
+        Una dispersa dinastía de solitarios ha cambiado la faz del mundo. Su
+        tarea prosigue. Si nuestras previsiones no erran, de aquí a cien años
+        alguien descubrirá los cien tomos de la Segunda Enciclopedia de Tlön.
+        Entonces desaparecerán del planeta el inglés y el francés y el mero
+        español. El mundo será Tlön. Yo no hago caso, yo sigo revisando en los
+        quietos días del hotel de Adrogué una indecisa traducción quevediana
+        (que no pienso dar a la imprenta) del Urn Burial de Browne...
+      </p>
+
+      <div class="flex space-x-4 justify-center">
+        <Button class="my-10" @click="showOption('a')"> A </Button>
+        <Button class="my-10" @click="showOption('b')"> B </Button>
+        <Button class="my-10" @click="showOption('c')"> C </Button>
+      </div>
+
+      <Modal :show="show" @close="show = false">
+        <div
+        class="w-[100%] h-80 flex flex-col justify-center items-center"
+        >
+        <h2 class="text-lg font-semibold mb-2">Opción: <span class="uppercase"> {{ option }}</span></h2>
+          <p class="px-4 select-none text-lg leading-10 text-justify">{{ text }}</p>
+      </div>
+      </Modal>
     </section>
   </NuxtLayout>
 </template>
 
 <script setup>
-import Dropdown from "@/components/Core/Dropdown.vue";
+import Button from "~/components/Core/Button/Button.vue";
+import Modal from "~/components/Core/Modal.vue";
 import { ref } from "vue";
 
-const firstOption = [
-  { id: 1, name: "tigres transparentes" },
-  { id: 2, name: "osos albinos" },
-  { id: 3, name: "unicornios amarillos" },
-  { id: 4, name: "lagartos gigantes" },
-  { id: 4, name: "diminutos elefantes verdes" },
-];
+const show = ref(false);
+const text = ref("");
+const option = ref("");
 
-const firstSelect = ref(null);
+function showOption(o) {
+  const map = {
+    a: "Y cien años han pasado y las previsiones de Borges se han hecho realidad, no solo el inglés, el francés y el español desaparecieron sino todas las demás lenguas también y dando lugar al idioma sin sustantivos y verbos impersonales de Tlön.",
+    b: "Y cien años han pasado y Borges no pudo haber estado más equivocado en sus predicciones. Aunque se intentó introducir el idioma de Tlön, su falta de substantivos dificultó su asimilación y poco a poco se convirtió en lengua muerta.",
+    c: "Y cien años han pasado y las previsiones de Borges se han hecho realidad, ahora las personas que habitan este planeta se han olvidado de su antigua identidad de “seres Humanos” y se hacen llamar simplemente Tlönistas tanto hombres como mujeres pues ya no existe alguna diferencia entre ellos. ",
+  };
 
-const secondOption = [
-  { id: 1, name: "sangre" },
-  { id: 2, name: "piedra translúcida" },
-  { id: 3, name: "espuma rosa" },
-  { id: 4, name: "lava azul" },
-];
+  option.value = o;
+  text.value = map[o];
 
-const secondSelect = ref(null);
+  show.value = true;
+}
 </script>
 
 <style lang="scss" scoped></style>

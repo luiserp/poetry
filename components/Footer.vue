@@ -75,7 +75,7 @@
 <script setup>
 const footerNavigation = {
   products: [
-    { name: "Sobre nosotros", href: "/#team" },
+    { name: "Sobre nosotros", href: "/about" },
     { name: "Contacto", href: "#" },
     // { name: "Objects", href: "#" },
     // { name: "Home Goods", href: "#" },

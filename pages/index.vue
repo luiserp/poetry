@@ -49,19 +49,13 @@
             <div
               class="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg"
             >
-              <UsersIcon class="h-6 w-6 text-blue-gray-900" />
+              <PhotoIcon class="h-6 w-6 text-blue-gray-900" />
             </div>
-            <h3 class="mb-3 font-bold">Working with us is a pleasure</h3>
+            <h3 class="mb-3 font-bold">Imágenes Reveladoras</h3>
             <p class="mb-8 font-normal text-blue-gray-500">
-              Don't let your uses guess by attaching tooltips and popoves to any
-              element. Just make sure you enable them first via JavaScript.
-              <br />
-              <br />
-              The kit comes with three pre-built pages to help you get started
-              faster. You can change the text and images and you're good to go.
-              Just make sure you enable them first via JavaScript.
+              Bienvenido a "Imágenes Reveladoras", una experiencia envolvente que redefine la lectura de diferentes obras de Borges y Cortázar al combinar la narrativa con la revelación progresiva de una imagen que encapsula la esencia del cuento.
             </p>
-            <Button variant="outlined">read more</Button>
+            <Button variant="outlined">Ver más</Button>
           </div>
           <div
             class="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0"
@@ -76,11 +70,11 @@
                   />
                 </CardHeader>
                 <CardBody>
-                  <p class="font-normal text-blue-gray-500">
+                  <!-- <p class="font-normal text-blue-gray-500">
                     The Arctic Ocean freezes every winter and much of the
                     sea-ice then thaws every summer, and that process will
                     continue whatever happens.
-                  </p>
+                  </p> -->
                 </CardBody>
               </Card>
             </NuxtLink>
@@ -88,7 +82,7 @@
         </div>
       </div>
     </section>
-    <section id="team" class="px-8 pt-20 pb-48">
+    <!-- <section id="team" class="px-8 pt-20 pb-48">
       <div class="container mx-auto">
         <div class="flex flex-col items-center justify-center">
           <h2 class="text-center text-4xl font-semibold">
@@ -146,7 +140,7 @@
           />
         </div>
       </div>
-    </section>
+    </section> -->
   </NuxtLayout>
 </template>
 
@@ -154,6 +148,7 @@
 import {
   ArrowPathIcon,
   FingerPrintIcon,
+  PhotoIcon,
   StarIcon,
   UsersIcon,
 } from "@heroicons/vue/24/solid";
