@@ -7,11 +7,11 @@ import "aos/dist/aos.css";
 
 export default defineNuxtPlugin((app) => {
   app.AOS = new AOS.init({
-    disable: "mobile",
+    // disable: "mobile",
     // offset: 200,
-    duration: 600,
-    easing: "ease-in-out-cubic",
-    once: true,
+    // duration: 600,
+    // easing: "ease-in-out-cubic",
+    // once: true,
   }); // or any other options you need
 });
 
