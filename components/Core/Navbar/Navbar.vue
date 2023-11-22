@@ -118,6 +118,12 @@ const links = computed(() => ([
         class: "text-gray-700 hover:text-gray-900",
     },
     {
+        name: "La Lejana",
+        href: "/lejana",  
+        icon: MapPinIcon,
+        class: "text-gray-700 hover:text-gray-900",
+    },
+    {
         name: "Nosotros",
         href: "/about",  
         icon: UserCircleIcon,
