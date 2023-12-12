@@ -63,7 +63,7 @@
 
       
       <h2 class="text-lg font-semibold text-center">
-        Por donde te gustaría empezar?
+        ¿Por donde te gustaría empezar?
       </h2>
 
       <div class="flex space-x-4 justify-center">
