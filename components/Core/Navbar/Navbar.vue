@@ -203,10 +203,10 @@ const links = ref([
         opened: false,
         children: [
             { name: "La continuidad", href: "/teory/park", icon: PhotoIcon },
-            { name: "Universos de Elección", href: "/teory/tlon", icon: MapPinIcon },
-            { name: "Lejana", href: "/teory/lejana", icon: ReceiptRefundIcon },
-            { name: "El jardín", href: "/teory/garden", icon: LanguageIcon },
             { name: "El Girar de Destinos", href: "/teory/compass", icon: CompassIcon },
+            { name: "Universos de Elección", href: "/teory/tlon", icon: MapPinIcon },
+            { name: "La Lejana", href: "/teory/lejana", icon: ReceiptRefundIcon },
+            { name: "El Jardín verbal", href: "/teory/garden", icon: LanguageIcon },
             { name: "Rayuela", href: "/rayuela", icon: Squares2X2Icon },
         ]
     },
