@@ -62,7 +62,7 @@
         Valparaíso. Valparaíso, Chile. Acta literaria 42 (2011): 09-31.
       </p>
 
-      <NuxtLink href="/tlon"><Button class="my-6"> Volver </Button></NuxtLink> 
+      <NuxtLink href="/tlon"><Button class="my-6"> Ver obra </Button></NuxtLink> 
 
     </section>
   </NuxtLayout>

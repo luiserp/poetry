@@ -21,14 +21,14 @@
 
           <!-- Sitemap sections -->
           <div
-            class="col-span-6 mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3 md:col-span-8 md:col-start-3 md:row-start-1 md:mt-0 lg:col-span-6 lg:col-start-2"
+            class="col-span-8 mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 md:col-span-10 md:col-start-3 md:row-start-1 md:mt-0 lg:col-span-11 lg:col-start-2"
           >
             <div
               class="grid grid-cols-1 gap-y-12 sm:col-span-2 sm:grid-cols-2 sm:gap-x-8"
             >
               <div>
                 <h3 class="text-sm font-medium text-white">Secciones</h3>
-                <ul role="list" class="mt-6 space-y-6">
+                <ul role="list" class="mt-6 space-y-6 grid grid-cols-2 items-baseline gap-x-4">
                   <li
                     v-for="item in footerNavigation.products"
                     :key="item.name"
@@ -43,8 +43,8 @@
                 </ul>
               </div>
               <div>
-                <h3 class="text-sm font-medium  text-white">Teoría</h3>
-                <ul role="list" class="mt-6 space-y-6">
+                <h3 class="text-sm font-medium text-white">Teoría</h3>
+                <ul role="list" class="mt-6 space-y-6 grid grid-cols-2 items-baseline gap-x-4">
                   <li
                     v-for="item in footerNavigation.company"
                     :key="item.name"
@@ -58,7 +58,7 @@
                   </li>
                 </ul>
               </div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -75,17 +75,24 @@
 <script setup>
 const footerNavigation = {
   products: [
-    { name: "Imágenes Reveladoras", href: "/works" },
-    { name: "El Girar De Destinos", href: "/compass" },
-    { name: "Universos De Elección", href: "/tlon" },
-    { name: "Sobre nosotros", href: "/about" },
+    { name: "Imágenes reveladoras", href: "/works" },
+    { name: "El Girar de Destinos", href: "/compass" },
+    { name: "Universos de Elección", href: "/tlon" },
+    { name: "La Lejana", href: "/lejana" },
+    { name: "El Jardín verbal", href: "/garden" },
+    { name: "Rayuela", href: "/rayuela" },
+    { name: "Nosotros", href: "/about" },
     // { name: "Objects", href: "#" },
     // { name: "Home Goods", href: "#" },
     // { name: "Accessories", href: "#" },
   ],
   company: [
-    { name: "Universos de Elección", href: "/tlon/justification" },
-    { name: "El Girar de Destinos", href: "/compass/justification" },
+    { name: "Universos de Elección", href: "teory/tlon" },
+    { name: "El Girar de Destinos", href: "teory/compass" },
+    { name: "Rayuela", href: "/rayuela" },
+    { name: "La continuidad", href: "/teory/park" },
+    { name: "Lejana", href: "/teory/lejana" },
+    { name: "El jardín", href: "/teory/garden" },
     // { name: "Press", href: "#" },
     // { name: "Careers", href: "#" },
     // { name: "Terms & Conditions", href: "#" },

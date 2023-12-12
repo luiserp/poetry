@@ -326,8 +326,6 @@
           <Compass :link="link" />
         </div>
       </Modal>
-
-      <NuxtLink href="/compass/justification"><Button class="my-6"> Justificacíon </Button></NuxtLink> 
     </section>
 
 

@@ -4,7 +4,7 @@
       class="container px-10 mt-6 text-justify leading-8 text-gray-900 p-10 border-solid border bg-gray-50 shadow-sm rounded-lg mx-4 w-[90%] min-h-screen space-y-4"
       data-aos="fade-up"
     >
-      <h2 class="text-lg font-semibold text-center">
+      <h2 class="text-lg font-semibold">
         Rayuela. Julio Cortázar, 1963.
       </h2>
       <p class="select-none text-lg leading-10">
@@ -51,7 +51,7 @@
       texto.
       <br />
       <br />
-
+      <h2 class="font-semibold text-lg">Bibliografía</h2>
       Cortázar, Julio. Clases de literatura. Berkeley, 1980. Alfaguara, 2013.
       <br />
       Barrenechea, Ana María. ¨Génesis y circunstancias¨, en la edición crítica

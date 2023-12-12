@@ -142,10 +142,6 @@
         <Button class="my-10" @click="showOption('c')"> C </Button>
       </div>
 
-      <NuxtLink href="/tlon/justification"
-        ><Button class=""> Justificacíon </Button></NuxtLink
-      >
-
       <Modal :show="show" @close="show = false">
         <div class="w-[100%] h-80 flex flex-col justify-center items-center">
           <h2 class="text-lg font-semibold mb-2">

@@ -14,4 +14,3 @@ export default defineNuxtPlugin((app) => {
     // once: true,
   }); // or any other options you need
 });
-

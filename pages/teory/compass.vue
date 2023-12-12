@@ -60,7 +60,7 @@
       </p>
 
       <NuxtLink href="/compass"
-        ><Button class="my-6"> Volver </Button></NuxtLink
+        ><Button class="my-6"> Ver obra </Button></NuxtLink
       >
     </section>
   </NuxtLayout>

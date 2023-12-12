@@ -4,7 +4,7 @@
       <!-- Navbar -->
       <slot name="navbar">
         <div
-          class="z-50 flex px-10 py-2 bg-gray-100 border-solid border-b shadow-sm"
+          class="z-50 flex px-2 md:px-10 py-2 bg-gray-100 border-solid border-b shadow-sm"
         >
           <Navbar></Navbar>
         </div>
