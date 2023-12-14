@@ -4,6 +4,8 @@
       class="container px-10 mt-6 text-justify leading-8 text-gray-900 p-10 invert-text border-solid border bg-gray-50 shadow-sm rounded-lg mx-4 w-[90%] min-h-screen space-y-4"
       data-aos="fade-up"
     >
+    
+      <h2 class="text-lg font-semibold invert-text">“Lejana”. Julio Cortázar. Bestiario, 1951.</h2>
       <h2 class="text-lg font-semibold invert-text">Diario de Alina Reyes</h2>
       <p class="select-none text-lg leading-10 invert-text">12 de enero</p>
       <p class="select-none text-lg leading-10 invert-text">

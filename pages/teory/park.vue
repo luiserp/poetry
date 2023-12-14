@@ -5,7 +5,7 @@
       data-aos="fade-up"
     >
       <h2 class="font-semibold text-lg">
-        “La continuidad de los parques”. Julio Cortázar. Final del juego, 1956.
+        “La continuidad de los parques” de Julio Cortázar. Final del juego, 1956.
       </h2>
       <p class="select-none text-lg leading-10">
         “La Continuidad de los Parques” es un cuento corto escrito por Julio

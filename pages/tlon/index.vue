@@ -4,8 +4,8 @@
       class="container px-10 mt-6 text-justify leading-8 text-gray-900 p-10 border-solid border bg-gray-50 shadow-sm rounded-lg mx-4 w-[90%] min-h-screen space-y-4"
       data-aos="fade-up"
     >
-      <h2 class="text-lg font-semibold">Tlön, Uqbar, Orbis Tertius</h2>
-      <h4 class="font-semibold">I</h4>
+      <h2 class="text-lg font-semibold">"Tlön, Uqbar, Orbis Tertius", de Jorge Luis Borges. 1940 </h2>
+      <h4 class="font-semibold font-serif text-center">I</h4>
 
       <p class="select-none text-lg leading-10">
         Debo a la conjunción de un espejo y de una enciclopedia el
@@ -139,7 +139,8 @@
         Naturalmente, no dio con el menor indicio de Uqbar.
       </p>
 
-      <h4 class="font-semibold">II</h4>
+      <h4 class="font-semibold font-serif text-center">II</h4>
+
 
       <p class="select-none text-lg leading-10">
         Algún recuerdo limitado y menguante de Herbert Ashe, ingeniero de los

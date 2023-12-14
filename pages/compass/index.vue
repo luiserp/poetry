@@ -4,6 +4,9 @@
       class="container px-10 mt-6 text-justify leading-8 text-gray-900 p-10 border-solid border bg-gray-50 shadow-sm rounded-lg mx-4 w-[90%] min-h-screen"
       data-aos="fade-up"
       >
+      <h2 class="text-lg font-semibold">
+        “La muerte y la brújula” de Jorge Luis Borges. 1942.
+      </h2>
       <!-- Intro -->
       <p class="select-none text-xl leading-10">
         De los muchos problemas que ejercitaron la temeraria perspicacia de

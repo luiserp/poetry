@@ -5,7 +5,7 @@
       data-aos="fade-up"
     >
       <h2 class="text-lg font-semibold">
-        Rayuela. Julio Cortázar, 1963.
+        “Rayuela” de Julio Cortázar. 1963
       </h2>
       <p class="select-none text-lg leading-10">
 

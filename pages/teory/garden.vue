@@ -5,8 +5,7 @@
       data-aos="fade-up"
     >
       <h2 class="font-semibold text-lg">
-        “El jardín de los senderos que se bifurcan”. Jorge Luis Borges. El
-        jardín de los senderos que se bifurcan, 1941.
+        “El jardín de los senderos que se bifurcan” de Jorge Luis Borges. 1941
       </h2>
       <p class="select-none text-lg leading-10">
         Existe un consenso entre la crítica literaria que el cuento “El jardín

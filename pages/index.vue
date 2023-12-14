@@ -122,7 +122,7 @@
               <NuxtLink href="/compass"
                 ><Button variant="outlined">Ver más</Button></NuxtLink
               >
-              <NuxtLink href="/compass/justification"
+              <NuxtLink href="/teory/compass"
                 ><Button variant="outlined">Justificacíon</Button></NuxtLink
               >
             </div>
@@ -178,7 +178,7 @@
               <NuxtLink href="/tlon"
                 ><Button variant="outlined">Ver más</Button></NuxtLink
               >
-              <NuxtLink href="/tlon/justification"
+              <NuxtLink href="/teory/tlon"
                 ><Button variant="outlined">Justificacíon</Button></NuxtLink
               >
             </div>

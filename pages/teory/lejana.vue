@@ -5,7 +5,7 @@
       data-aos="fade-up"
     >
       <h2 class="font-semibold text-lg">
-        “Lejana”. Julio Cortázar. Bestiario, 1951.
+        “Lejana” de Julio Cortázar. Bestiario, 1951.
       </h2>
       <p class="select-none text-lg leading-10">
         Lejana es uno de tantos cuentos fantásticos de Julio Cortázar en los que
